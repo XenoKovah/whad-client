@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+       {
+            "name": "ble_central_basic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/examples/ble/ble_central_basic.py",
+            "console": "integratedTerminal",
+            "args": ["hci0"]
+        }
+    ]
+}

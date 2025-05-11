@@ -9,9 +9,10 @@ if len(sys.argv) >= 2:
     central = Central(WhadDevice.create(interface))
 
     # Connect to a specific device
-    device = central.connect('74:da:ea:91:47:e3', random=False)
+    device = central.connect('ca:fe:13:37:00:01', random=True)
 
     # Discover and display the profile
+    print("[i] Connected. Discovering profile...")
     device.discover()
     print("[i] Discovered profile")
     for service in device.services():
